@@ -1,0 +1,241 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #18151533;
+    text-align: justify;
+    margin-top: 50px;
+
+}
+
+p {
+    margin: 0px;
+}
+
+header {
+    overflow: hidden;         
+    font-size: 25px;
+    font-weight: 500;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+header .logo {
+    float: left;   
+}
+
+header a {
+    float: right;             
+    display: block;           
+    color: #000000;          
+    text-align: center;       
+    padding: 14px 16px;       
+    text-decoration: none; 
+}
+
+.title {
+    font-size: 25px;
+    margin: 25px 0px 20px 0px;
+    text-align: left;
+}
+
+main {
+    margin: 10px 200px;
+}
+
+.container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns layout */
+    column-gap: 20px;
+}
+
+.profile {
+    margin-top: 20px;
+}
+
+.profile img {
+    width: 200px; 
+    height: auto; 
+    border-radius: 15px; 
+}
+
+.profile .text {
+    margin-top: 13px; 
+    font-size: 16px; 
+}
+
+.about {
+    overflow: hidden; /* Clear floats */
+}
+
+.about h3 {
+    font-size: 20px;
+    margin-top: 10;
+}
+
+.about p {
+    font-size: 19px;   
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+#about-skills {
+    font-size: 15px;   
+    line-height: 30px;
+}
+
+.projects-grid, .schools-grid, .blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+}
+
+.project, .school, .blog { 
+    max-width: 400px; /* Extend width for projects, schools, and blogs */
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.project {
+    background-color: #ee2f6b30;
+}
+
+.project-content {
+    overflow: hidden;
+}
+
+.project-image {
+    width: 120px;
+    height: 90px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 15px;
+}
+
+.project-name {
+    font-size: 20px;    
+}
+
+.project-description {
+    font-size: 20px;   
+    line-height: 18px;
+    margin: 15px 0px;
+    text-align: left;
+}
+
+.project-learn-more {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 6px;
+    background-color: #000000;
+    color: #ffffffa0;
+    font-size: 20px;
+}
+
+.company { 
+    background-color: #ee2f6b30;
+    border-radius: 12px;
+    margin-bottom: 20px;    
+}
+
+.company-description {
+    font-size: 19px;   
+    line-height: 25px;
+}
+
+.school { 
+    background-color: #ee2f6b30;
+}
+
+.school-image {
+    width: 125px;
+    height: 125px;
+    border-radius: 90px;
+    float: left;
+    margin-right: 20px;
+}
+
+.school-name {
+    font-size: 30px;  
+    margin-bottom: 15px; 
+}
+
+.school-description {
+    font-size: 20px;   
+    line-height: 25px;
+}
+
+.blog { 
+    background-color: #ee2f6b30;
+    overflow: hidden;
+    text-align: left;
+}
+
+.blog-image {
+    display: block;
+    height: 90px;
+    width: 120px;
+}
+
+.blog-title {
+    font-size: 19px;
+    margin: 20px;
+}
+
+.blog-content {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 10px 20px 20px 20px;
+}
+
+#contact-container {
+    text-align: center;
+    padding: 30px 0 60px 0; 
+}
+
+.contact-image {
+    height: 30px;    
+    width: 30px; 
+    padding: 0 5px; 
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 500px) {
+    main {
+        margin: 10px; /* Full width on small screens */
+    }
+
+    header a {
+        float: none; /* Stack navigation links */
+        text-align: center; /* Center text for smaller screens */
+        padding: 10px 0; /* Adjust padding */
+    }
+
+    .projects-grid, .blogs-grid {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+    }
+
+    .project, .blog, .school {
+        margin: 10px 0; /* Add margin for spacing */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .project-name, .blog-title {
+        font-size: 18px; /* Slightly smaller font size */
+    }
+
+    .project-description, .blog-content {
+        font-size: 14px; /* Smaller font size for better readability */
+        line-height: 1.4; /* Adjust line height for readability */
+    }
+
+    .contact-image {
+        height: 25px; /* Adjust icon size */
+        width: 25px; 
+    }
+}
